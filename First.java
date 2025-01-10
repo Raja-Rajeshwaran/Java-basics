@@ -3,5 +3,6 @@ public class First{
     System.out.println("Hello Raja!");
     System.out.println("This is your program");
     System.out.println("Say hello to my Git");
+    System.out.println("Hello Kathar!");
   }
 }
