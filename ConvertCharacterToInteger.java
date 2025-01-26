@@ -8,7 +8,6 @@ public class ConvertCharacterToInteger {
             char character = sc.next().charAt(0);
             int ASCIIvalue = character;
             System.out.println(character + ":" + ASCIIvalue);
-            sc.close();
         }
     }
 }
