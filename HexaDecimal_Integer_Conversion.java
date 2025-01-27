@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class HexaDecimalValueConversion {
+public class HexaDecimal_Integer_Conversion {
 
     public static void main(String[] args) {
         try (Scanner s = new Scanner(System.in)) {
