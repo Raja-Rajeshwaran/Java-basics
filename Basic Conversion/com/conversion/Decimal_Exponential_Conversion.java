@@ -1,3 +1,4 @@
+package com.conversion;
 
 import java.util.Scanner;
 
