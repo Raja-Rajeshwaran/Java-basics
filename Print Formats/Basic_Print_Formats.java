@@ -1,7 +1,7 @@
 
 import java.util.Scanner;
 
-public class Print {
+public class Basic_Print_Formats {
 
     public static void main(String[] args) {
         try (Scanner sc = new Scanner(System.in)) {
