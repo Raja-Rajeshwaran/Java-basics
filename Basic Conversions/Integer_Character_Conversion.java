@@ -1,5 +1,5 @@
-
-import java.util.*;
+package conversion;
+import java.util.Scanner;
 
 public class Integer_Character_Conversion {
 
