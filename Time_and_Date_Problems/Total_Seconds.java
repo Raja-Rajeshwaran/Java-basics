@@ -1,5 +1,5 @@
 import java.util.Scanner;
-public class Total_Seconds {
+public class Total_Seconds{
     public static void main(String[] args) {
         try (Scanner scanner = new Scanner(System.in)) {
             int totalseconds = scanner.nextInt();
