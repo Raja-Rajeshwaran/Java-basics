@@ -7,7 +7,7 @@ public class Degree_to_Radian {
 
             double degree = scanner.nextDouble();
             double radian = degree * (Math.PI / 180.0);
-            System.out.printf("%.2f", radian);
+            System.out.printf("%.2f Radians", radian);
             
         }
     }
