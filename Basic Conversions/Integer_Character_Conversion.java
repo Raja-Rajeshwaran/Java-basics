@@ -1,9 +1,9 @@
-
 import java.util.Scanner;
 
 public class Integer_Character_Conversion {
 
     public static void main(String[] args) {
+
         try (Scanner sc = new Scanner(System.in)) {
 
             // Character to Integer
@@ -15,6 +15,7 @@ public class Integer_Character_Conversion {
             char character2 = sc.next().charAt(0);
             int Ascii2 = character2;
             System.out.println(character2 + " : " + Ascii2);
+
         }
     }
 }
