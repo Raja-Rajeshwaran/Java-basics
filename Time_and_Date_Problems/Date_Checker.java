@@ -1,19 +1,22 @@
 import java.util.Scanner;
 public class Date_Checker {
-    @SuppressWarnings("ConvertToTryWithResources")
+    
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
         scanner.close();
+
         String[] parts = input.split("/");
         if (parts.length != 3) {
             System.out.println("Invalid date format");
             return;
         }
+
         int date = Integer.parseInt(parts[0]);
         int month = Integer.parseInt(parts[1]);
         int year = Integer.parseInt(parts[2]);
+        
         if (isValidDate(date, month, year)) {
             System.out.println("Valid");
         } else {
@@ -34,7 +37,6 @@ public class Date_Checker {
                 }
             }
         }
-        return false;
-        
+        return false;   
     }
 }

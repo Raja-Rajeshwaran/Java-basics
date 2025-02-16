@@ -3,8 +3,8 @@ import java.util.Scanner;
 public class Factorial {
     public static void main(String[] args) {
 
-        @SuppressWarnings("resource")
         Scanner scanner = new Scanner(System.in);
+
         long num = scanner.nextLong();
         long factorial = 1;
 
@@ -13,6 +13,8 @@ public class Factorial {
         }
 
         System.out.printf("The Factorial of %d is %d",num,factorial);
+
+        scanner.close();
 
     }
 }

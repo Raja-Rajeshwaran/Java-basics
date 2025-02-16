@@ -4,24 +4,29 @@ import java.util.Scanner;
 public class Time_Checker {
     public static void main(String[] args) {
 
-        try (Scanner scanner = new Scanner(System.in)) {
+        Scanner scanner = new Scanner(System.in);
 
-            String input = scanner.nextLine();
-            SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
-            sdf.setLenient(false);
-            try {
-                int hours = Integer.parseInt(input.split(":")[0]);
-                if (hours >= 0 && hours <= 24) {
-                    System.out.println("Valid");
-                } else {
-                    System.out.println("Not Valid");
-                }
-            } 
-            catch (NumberFormatException e) {
+        String input = scanner.nextLine();
+        SimpleDateFormat sdf = new SimpleDateFormat("HH:mm:ss");
+        sdf.setLenient(false);
+        scanner.close();
+
+        try {
+
+            int hours = Integer.parseInt(input.split(":")[0]);
+            int minutes = Integer.parseInt(input.split(":")[1]);
+            int seconds = Integer.parseInt(input.split(":")[2]);
+            
+            if (hours >= 0 && hours <= 24 && minutes >= 0 && minutes <=60 && seconds >=0 && seconds <=60 ) {
+                System.out.println("Valid");
+            } else {
                 System.out.println("Not Valid");
             }
-
+        } 
+        catch (NumberFormatException e) {
+            System.out.println("Not Valid");
         }
+
     }
 }
 
