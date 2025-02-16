@@ -1,21 +1,22 @@
 import java.util.Scanner;
 
-public class Factorial {
-    
+public class Raise_Value {
+
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);
 
         long num = scanner.nextLong();
-        long factorial = 1;
+        long pow = scanner.nextLong();
+        long ans = 1;
 
-        for (long val = 1; val <= num; val++) {
-            factorial *= val;
+        for (int ctr = 1; ctr <= pow; ctr++) {
+            ans *= num;
         }
 
-        System.out.printf("The Factorial of %d is %d",num,factorial);
+        System.out.println(ans);
 
         scanner.close();
-
+        
     }
 }

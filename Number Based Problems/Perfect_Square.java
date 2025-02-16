@@ -2,7 +2,6 @@ import java.util.Scanner;
 
 public class Perfect_Square {
 
-    @SuppressWarnings("empty-statement")
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

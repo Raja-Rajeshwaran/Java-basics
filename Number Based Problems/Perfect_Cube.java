@@ -1,11 +1,14 @@
 import java.util.Scanner;
 
 public class Perfect_Cube {
-    
+
     public static void main(String[] args) {
+
         Scanner scanner = new Scanner(System.in);
+        
         int num = scanner.nextInt();
         int factor = 3;
+
          while (num % factor == 0) {
                 num = num / factor;
                 
@@ -15,5 +18,8 @@ public class Perfect_Cube {
             System.out.println("Perfect Cube");
         else
             System.out.println("Not a Perfect Cube");
+        
+        scanner.close();
+
     }
 }
