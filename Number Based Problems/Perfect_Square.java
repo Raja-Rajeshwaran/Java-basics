@@ -15,7 +15,7 @@ public class Perfect_Square {
         if (root * root == N) {
             System.out.println("Perfect Square"); 
         }else {
-            System.out.println("Not");
+            System.out.println("Not a Perfect Square");
         }
 
             scanner.close();
