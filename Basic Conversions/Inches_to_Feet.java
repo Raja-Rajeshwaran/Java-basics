@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Inches_to_Feet {
+    
     public static void main(String[] args) {
 
         Scanner scanner = new Scanner(System.in);

@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Squarefeet_to_Acres {
+    
     public static void main(String[] args) {
         
         Scanner scanner = new Scanner(System.in);
