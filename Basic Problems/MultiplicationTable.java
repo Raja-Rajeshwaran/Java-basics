@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Multiplication_Table {
+public class MultiplicationTable {
     
     public static void main(String[] args) {
 
@@ -14,7 +14,5 @@ public class Multiplication_Table {
         }
 
         scanner.close();
-
     }
 }
-

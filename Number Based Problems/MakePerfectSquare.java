@@ -1,22 +1,20 @@
 import java.util.Scanner;
 
-public class Make_PS {
-
+public class MakePerfectSquare {
     public static void main(String[] args) {
-
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter a number: ");
         int num = scanner.nextInt();
+        scanner.close();
+
         int factor = 2;
-        int count;
         int divide = 1;
 
-        scanner.close();
-        
         while (num != 1) {
-            count = 0;
+            int count = 0;
             while (num % factor == 0) {
-                num = num / factor;
+                num /= factor;
                 count++;
             }
             if (count % 2 == 1) {
@@ -25,7 +23,6 @@ public class Make_PS {
             factor++;
         }
 
-        System.out.println(divide);
-
+        System.out.println("The smallest multiplier to make it a perfect square is: " + divide);
     }
 }

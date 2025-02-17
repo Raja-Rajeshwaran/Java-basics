@@ -6,19 +6,16 @@ public class Quotient {
 
         Scanner scanner = new Scanner(System.in);
 
+        System.out.print("Enter the numerator: ");
         int num = scanner.nextInt();
-        int divi = scanner.nextInt();
-        int val = 1;
-
-        while (divi <= num) {
-            num = num - divi;
-            val++;
-        }
-
-        System.out.println(val - 1);
-
-        scanner.close();
         
+        System.out.print("Enter the divisor: ");
+        int divi = scanner.nextInt();
+        
+        scanner.close();
+
+        int quotient = num / divi;
+
+        System.out.println("The quotient of " + num + " divided by " + divi + " is: " + quotient);
     }
 }
-

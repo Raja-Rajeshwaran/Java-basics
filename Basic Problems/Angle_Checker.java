@@ -17,7 +17,5 @@ public class Angle_Checker {
         }
             
         scanner.close();
-
     }
 }
-

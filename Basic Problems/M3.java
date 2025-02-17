@@ -19,4 +19,3 @@ public class M3 {
         scanner.close();
     }
 }
-

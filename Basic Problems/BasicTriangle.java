@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Basic_Triangle {
+public class BasicTriangle {
 
     public static void main(String[] args) {
 
@@ -15,8 +15,7 @@ public class Basic_Triangle {
         } else {
             System.out.println("Not Valid");
         }
-            
+
         scanner.close();
-        
     }
 }

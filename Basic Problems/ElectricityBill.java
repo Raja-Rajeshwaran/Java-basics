@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class Electricity_Bill {
+public class ElectricityBill {
 
     public static void main(String[] args) {
 
@@ -8,6 +8,7 @@ public class Electricity_Bill {
 
         int number = scanner.nextInt();
         double ans;
+
         if (number > 250) {
             ans = (50 * 0.50) + (100 * 0.75) + (100 * 1.20) + (number - 250) * 1.50;
         } else if (number > 150) {
@@ -17,10 +18,10 @@ public class Electricity_Bill {
         } else {
             ans = number * 0.5;
         }
-        ans = ans + (ans * 0.2);
+
+        ans += ans * 0.2;  // Adding 20% surcharge
         System.out.printf("%.2f Bill", ans);
 
         scanner.close();
-        
     }
 }

@@ -8,17 +8,14 @@ public class Multiply {
 
         long number = scanner.nextLong();
         long multiple = scanner.nextLong();
-        long value;
         long sum = 0;
 
-        for (value = 1; value <= multiple; value++) {
+        for (long value = 1; value <= multiple; value++) {
             sum = number + sum;
         }
 
         System.out.println(sum);
 
         scanner.close();
-        
     }
 }
-
